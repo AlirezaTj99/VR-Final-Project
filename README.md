@@ -12,6 +12,34 @@ This is the final project of Virtual Reality
 - WSL (with Ubuntu 20.04)
 - ROS Noetic
 
+## How to install
+1. Go to Epic Games GitHub page: https://www.unrealengine.com/en-US/ue-on-github
+
+2. Follow instructions to link your Epic account to GitHub.
+
+3. Once linked, you’ll have access to the private UnrealEngine repo on GitHub.
+    if you have linked your accounts successfully you should see this link without 404 ERROR!
+    https://github.com/EpicGames
+
+    If not linked yet go directly to:
+    https://github.com/orgs/EpicGames/invitation
+    and accept the Invite (if pending).
+
+4. Log in with the GitHub account linked to Epic.
+
+5. In the repo, switch to the branch;at the moment of publishing this code we only have Cesium plugin for version 5.0 → 5.3:
+    ```bash
+    5.3
+    ```
+    
+6. Clone it:
+    ```bash
+    git clone -b 5.3 https://github.com/EpicGames/UnrealEngine.git
+    cd UnrealEngine
+    Setup.bat
+    GenerateProjectFiles.bat
+    ```
+
 #### Python requirements
 
 ```bash
