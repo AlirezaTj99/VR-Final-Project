@@ -12,7 +12,8 @@ This is the final project of Virtual Reality
 - WSL (with Ubuntu 20.04)
 - ROS Noetic
 
-## How to install
+### How to install
+
 1. Go to Epic Games GitHub page: https://www.unrealengine.com/en-US/ue-on-github
 
 2. Follow instructions to link your Epic account to GitHub.
@@ -31,7 +32,7 @@ This is the final project of Virtual Reality
     ```bash
     5.3
     ```
-    
+
 6. Clone it:
     ```bash
     git clone -b 5.3 https://github.com/EpicGames/UnrealEngine.git
