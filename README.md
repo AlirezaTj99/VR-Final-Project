@@ -40,6 +40,11 @@ This is the final project of Virtual Reality
     Setup.bat
     GenerateProjectFiles.bat
     ```
+7. run:
+    ```bash
+    Setup.bat
+    GenerateProjectFiles.bat
+    ```
 
 #### Python requirements
 
