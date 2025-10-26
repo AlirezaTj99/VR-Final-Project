@@ -45,6 +45,7 @@ This is the final project of Virtual Reality
     Setup.bat
     GenerateProjectFiles.bat
     ```
+if you see any errors make sure you already installed Visual Studio 2022 and both "Game development with C++" and "Desktop development with C++" are ticked.
 
 #### Python requirements
 
