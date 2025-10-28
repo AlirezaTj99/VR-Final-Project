@@ -40,12 +40,45 @@ This is the final project of Virtual Reality
     Setup.bat
     GenerateProjectFiles.bat
     ```
+
 7. run:
     ```bash
     Setup.bat
     GenerateProjectFiles.bat
     ```
-if you see any errors make sure you already installed Visual Studio 2022 and both "Game development with C++" and "Desktop development with C++" are ticked.
+    if you see any errors make sure you already installed Visual Studio 2022 and both "Game development with C++" and "Desktop development with C++" are ticked.
+
+8. open your powershell and install WSL (with Ubuntu 20.04):
+    ```bash
+    wsl --install -d Ubuntu-20.04
+    ```
+    This will:
+    - Enable the Windows Subsystem for Linux
+    - Download and install Ubuntu 20.04 LTS
+    - Ask you to create a username + password when first launched
+
+9. You need to add the ROS package source:
+    ```bash
+    sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+    ```
+    then run these one by one:
+    ```bash
+    sudo apt install curl -y; sudo apt update
+    curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+    sudo apt update
+    ```
+
+10. Now you can install ROS Noetic:
+    ```bash
+    sudo apt install ros-noetic-desktop-full -y
+    ```
+
+    Finally, initialize rosdep (needed for dependencies):
+    ```bash
+    sudo apt install python3-rosdep -y
+    sudo rosdep init
+    rosdep update
+    ```
 
 #### Python requirements
 
@@ -150,3 +183,11 @@ In the launch file you can customize some parameters that will slightly change t
 
 ## Software Architecture
 ![ROS Architecture](UML_VR.drawio.png)
+
+you can commit your updates to git using:
+    ```bash
+    git add README.md
+    git commit -m "Update README with new information"
+    git push
+    ```
+    you can modify commands based on what you have eddited.
