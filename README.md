@@ -80,7 +80,17 @@ This is the final project of Virtual Reality
     rosdep update
     ```
 
+    Once you done it all you can run and stop wsl using these commands:
+    ```bash
+    WSL
+    wsl --shutdown
+    ```
+
 #### Python requirements
+First, install msgpack-rpc-python alone:
+```bash
+pip install msgpack-rpc-python
+```
 
 ```bash
 pip install airsim msgpack-rpc-python # Airsim related
